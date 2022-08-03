@@ -1,0 +1,1 @@
+result: %{http_code} - duration: %{time_total}
