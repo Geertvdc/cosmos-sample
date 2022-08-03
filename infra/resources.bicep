@@ -146,8 +146,13 @@ resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2021-10-15' = {
   properties: {
     locations: [
       {
-        locationName: location
+        locationName: 'centralus'
         failoverPriority: 0
+        isZoneRedundant: false
+      }
+      {
+        locationName: 'westeurope'
+        failoverPriority: 1
         isZoneRedundant: false
       }
     ]
