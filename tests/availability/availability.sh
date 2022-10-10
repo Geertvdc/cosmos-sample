@@ -2,8 +2,7 @@
 count=0
 until false
 do
-	#OUTPUT=$(curl -w @curl-format.txt -s https://app-web-iszsinkujhif6.azurewebsites.net/lists/22fd3648e1e142c98ab75656646c8048 -o /dev/null)
-    curl -w @curl-format.txt -s -d '{"name": "test'$count'","listId": "22fd3648e1e142c98ab75656646c8048","state": "todo"}' -H "Content-Type: application/json" -X POST https://app-api-iszsinkujhif6.azurewebsites.net/lists/22fd3648e1e142c98ab75656646c8048/items -o /dev/null
+	curl -w @curl-format.txt -s -d '{"name": "test'$count'","listId": "d88ac7c552394cdea365d3f1c4f2e105","state": "todo"}' -H "Content-Type: application/json" -X POST https://app-api-kihrxlbnlw6v2.azurewebsites.net/lists/d88ac7c552394cdea365d3f1c4f2e105/items -o /dev/null
 	((count++))
 	echo "$count $OUTPUT"
     sleep 1
